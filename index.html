@@ -1,30 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h2 class="text-3xl text-center">Bài Tập JavaScript Buổi 7 & 8</h2>
-    <div>
-        <form class="row-auto items-center gap-y-3 py-3">
-            <div class="col-12 col-lg-6">
-                <input type="number" class="form-control form__input" id="inputNum"
-                    placeholder="Nhập số n">
+    <div class="pd-4">
+      <form class="row-auto items-center gap-y-3 py-3">
+        <div>
+          <input
+            class="bg-gray-500"
+            type="number"
+            id="inputNum"
+            placeholder="Nhập số n"
+          />
+        </div>
+        <div>
+          <button class="me-1 mb-1 bg-blue-500" type="button" id="btn">
+            Thêm số
+          </button>
+        </div>
+        <div class="bg-green-400">
+          👉<span id="txtArray"></span>
+        </div>
+      </form>
+    </div>
+
+    <div id="bai1" class="pb-4">
+        <h3>Bài 1: Tổng số dương</h3>
+      <form class=" gap-y-3 items-center px-2">
+        <div>
+          <button
+            class="me-1 mb-1 bg-blue-500"
+            type="button" id="btn-bt1"
+          >
+            Tính tổng
+          </button>
+        </div>
+        <div class="bg-green-400">
+          👉<span id="txtSum"></span>
+        </div>
+      </form>
+    </div>
+
+    <div id="bai2" class="pd-4">
+        <h3>Bài 2: Đếm số dương</h3>
+        <form class="row gy-3 center px-2">
+
+            <div>
+                <button class="me-1 mb-1 bg-blue-500" type="button" id="btn-bt2">Đếm số</button>
             </div>
-            <div class="col-12 col-lg-6">
-                <button class="btn btn--primary me-1 mb-1" type="button" onclick="getNumber()">Thêm
-                    số</button>
+            <div class="bg-green-400">
+                👉<span id="txtCount"></span>
             </div>
-            <div class="alert alert-success" role="alert">
-                👉<span id="txtArray"></span>
+        </form>
+    </div>
+
+    <div id="bai3" class="pb-4">
+        <h3>Bài 3: Tìm số dương nhỏ nhất</h3>
+        <form class="gy-3 items-center px-2">
+
+            <div>
+                <button class="bg-blue-500 me-1 mb-1" type="button" id="btn-bt3">Tìm số nhỏ nhất</button>
+            </div>
+            <div class="bg-green-400">
+                👉<span id="txtMin"></span>
+            </div>
+        </form>
+    </div>
+
+    <div id="bai4" class="pb-4">
+        <h3>Bài 4: Tìm số dương nhỏ nhất</h3>
+        <form class="gy-3 items-center px-2">
+
+            <div class="">
+                <button class="bg-blue-500 me-1 mb-1" type="button" id="btn-bt4">Tìm số dương nhỏ nhất</button>
+            </div>
+            <div class="bg-green-400">
+                👉<span id="txtMinPos"></span>
+            </div>
+        </form>
+    </div>
+
+    <div id="bai5" class="pb-4">
+        <h3>Bài 5: Tìm số chẵn cuối cùng</h3>
+        <form class=" gy-3 items-center px-2">
+
+            <div>
+                <button class="bg-blue-500 me-1 mb-1" type="button" id="btn-bt5">Tìm số chẵn</button>
+            </div>
+            <div class="bg-green-400">
+                👉<span id="txtEven"></span>
             </div>
         </form>
     </div>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>
